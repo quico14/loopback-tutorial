@@ -21,8 +21,6 @@ let TodoListTodoController = class TodoListTodoController {
         this.todoListRepo = todoListRepo;
     }
     async create(id, todo) {
-        // Should I do this?
-        todo.todoListId = id;
         return await this.todoListRepo.todos(id).create(todo);
     }
     async find(id, filter) {

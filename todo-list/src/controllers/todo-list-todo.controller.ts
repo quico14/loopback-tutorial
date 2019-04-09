@@ -35,9 +35,6 @@ export class TodoListTodoController {
     @param.path.string('id') id: string,
     @requestBody() todo: Todo,
   ): Promise<Todo> {
-    // Should I do this?
-    todo.todoListId = id;
-
     return await this.todoListRepo.todos(id).create(todo);
   }
 

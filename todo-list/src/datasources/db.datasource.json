@@ -1,4 +1,5 @@
 {
+  "useNewUrlParser": "true",
   "name": "db",
   "connector": "mongodb",
   "url": "mongodb://localhost:27017/loopback",
